@@ -1,0 +1,900 @@
+{
+    "survey": {
+        "type": "Food Survey Questionaire",
+        "details": {
+            "label": "Abu Dhabi Food Survey Questionaire",
+            "description": "Abu Dhabi Food Survey Questionaire",
+            "title": "Abu Dhabi Food Survey"
+        },
+        "sections": [{
+                "section_id": "01",
+                "title": "Demographics",
+                "conditions": null,
+                "header": true,
+                "questions": [{
+                        "id": "01",
+                        "required": true,
+                        "inputType": "dropDownMenu",
+                        "caption": "City / Area:",
+                        "values": [{
+                                "option": "AD",
+                                "label": "Abu Dhabi City"
+                            }, {
+                                "option": "AA",
+                                "label": "Al Ain"
+                            }, {
+                                "option": "D",
+                                "label": "Al Dhafra"
+                            }
+                        ],
+                        "next": [{
+                                "option": "ANY",
+                                "id": "02"
+                            }
+                        ]
+                    }, {
+                        "id": "02",
+                        "required": true,
+                        "inputType": "dropDownMenu",
+                        "caption": "Total household income per month in AED :",
+                        "values": [{
+                                "option": "0",
+                                "label": "less than 20000"
+                            }, {
+                                "option": "1",
+                                "label": "21000-40000"
+                            }, {
+                                "option": "2",
+                                "label": "41000-60000"
+                            }, {
+                                "option": "3",
+                                "label": "61000-80000"
+                            }, {
+                                "option": "4",
+                                "label": "81000-100000"
+                            }, {
+                                "option": "5",
+                                "label": "Above 100000"
+                            }
+                        ],
+                        "next": [{
+                                "option": "ANY",
+                                "id": "03"
+                            }
+                        ]
+                    }, {
+                        "id": "03",
+                        "required": true,
+                        "caption": "When is your birthday?",
+                        "inputType": "date",
+                        "values": [],
+                        "next": [{
+                                "option": "ANY",
+                                "id": "04"
+                            }
+                        ]
+                    }, {
+                        "id": "04",
+                        "required": true,
+                        "caption": "Are you UAE Citizen?",
+                        "inputType": "radiogroup",
+                        "values": [{
+                                "option": "01",
+                                "label": "NO"
+                            }, {
+                                "option": "02",
+                                "label": "YES"
+                            }
+                        ],
+                        "next": [{
+                                "option": "ANY",
+                                "id": "05"
+                            }
+                        ]
+                    }, {
+                        "id": "05",
+                        "required": true,
+                        "caption": "When is your Age?",
+                        "inputType": "editText",
+                        "values": [],
+                        "next": [{
+                                "option": "ANY",
+                                "id": "06"
+                            }
+                        ]
+                    }, {
+                        "id": "06",
+                        "required": true,
+                        "caption": "What is your gender?",
+                        "inputType": "radiogroup",
+                        "values": [{
+                                "option": "M",
+                                "label": "MALE"
+                            }, {
+                                "option": "F",
+                                "label": "FEMALE"
+                            }
+                        ],
+                        "next": [{
+                                "option": "M",
+                                "id": "09"
+                            }, {
+                                "option": "F",
+                                "id": "07"
+                            }
+                        ]
+                    }, {
+                        "id": "07",
+                        "required": true,
+                        "inputType": "radiogroup",
+                        "caption": "Are you currently pregnant?",
+                        "values": [{
+                                "option": "01",
+                                "label": "NO"
+                            }, {
+                                "option": "02",
+                                "label": "YES"
+                            }
+                        ],
+                        "next": [{
+                                "option": "ANY",
+                                "id": "08"
+                            }
+                        ]
+                    }, {
+                        "id": "08",
+                        "required": true,
+                        "inputType": "radiogroup",
+                        "caption": "Are you currently breastfeeding?",
+                        "values": [{
+                                "option": "01",
+                                "label": "NO"
+                            }, {
+                                "option": "02",
+                                "label": "YES"
+                            }
+                        ],
+                        "next": [{
+                                "option": "ANY",
+                                "id": "09"
+                            }
+                        ]
+                    }, {
+                        "id": "09",
+                        "required": true,
+                        "caption": "Weight (Kgs)",
+                        "inputType": "editText",
+                        "next": [{
+                                "option": "ANY",
+                                "id": "10"
+                            }
+                        ]
+                    }, {
+                        "id": "10",
+                        "required": true,
+                        "caption": "Weight (Kgs) - Calculated",
+                        "inputType": "editText",
+                        "next": [{
+                                "option": "ANY",
+                                "id": "11"
+                            }
+                        ]
+                    }, {
+                        "id": "11",
+                        "required": true,
+                        "caption": "Height (Cm)",
+                        "inputType": "editText",
+                        "next": [{
+                                "option": "ANY",
+                                "id": "12"
+                            }
+                        ]
+                    }, {
+                        "id": "12",
+                        "required": true,
+                        "caption": "Height (Cm) -  Calculated",
+                        "inputType": "editText",
+                        "next": [{
+                                "option": "ANY",
+                                "id": "13"
+                            }
+                        ]
+                    }, {
+                        "id": "13",
+                        "required": true,
+                        "inputType": "radiogroup",
+                        "caption": "Marital status",
+                        "values": [{
+                                "option": "S",
+                                "label": "Single"
+                            }, {
+                                "option": "M",
+                                "label": "Married"
+                            }, {
+                                "option": "D",
+                                "label": "Divorced"
+                            }, {
+                                "option": "W",
+                                "label": "Widowed"
+                            }
+                        ],
+                        "next": [{
+                                "option": "ANY",
+                                "id": "14"
+                            }
+                        ]
+                    }, {
+                        "id": "14",
+                        "required": true,
+                        "inputType": "radiogroup",
+                        "caption": "Current Situation",
+                        "values": [{
+                                "option": "E",
+                                "label": "Employed"
+                            }, {
+                                "option": "UE",
+                                "label": "Unemployed"
+                            }, {
+                                "option": "S",
+                                "label": "Student"
+                            }, {
+                                "option": "W",
+                                "label": "Widowed"
+                            }, {
+                                "option": "R",
+                                "label": "Retired"
+                            }, {
+                                "option": "HW",
+                                "label": "Housewife"
+                            }, {
+                                "option": "SE",
+                                "label": "Self-employed"
+                            }
+                        ],
+                        "next": [{
+                                "option": "ANY",
+                                "id": "15"
+                            }
+                        ]
+                    }, {
+                        "id": "15",
+                        "required": true,
+                        "inputType": "radiogroup",
+                        "caption": "Level of Education",
+                        "values": [{
+                                "option": "IL",
+                                "label": "Illiterate"
+                            }, {
+                                "option": "PS",
+                                "label": "Completed primary school"
+                            }, {
+                                "option": "SS",
+                                "label": "Completed secondary school"
+                            }, {
+                                "option": "DIP",
+                                "label": "Diploma"
+                            }, {
+                                "option": "UNV",
+                                "label": "Completed university"
+                            }, {
+                                "option": "PG",
+                                "label": "Post graduate qualification"
+                            }
+                        ],
+                        "next": [{
+                                "option": "ANY",
+                                "id": null
+                            }
+                        ]
+                    }
+                ]
+            }, {
+                "section_id": "02",
+                "title": "General",
+                "conditions": null,
+                "header": true,
+                "questions": [{
+                        "id": "01",
+                        "required": true,
+                        "caption": "Are you currently following a special diet? ",
+                        "inputType": "radiogroup",
+                        "values": [{
+                                "option": "01",
+                                "label": "NO"
+                            }, {
+                                "option": "02",
+                                "label": "YES"
+                            }
+                        ],
+                        "next": [{
+                                "option": "01",
+                                "id": "08"
+                            }, {
+                                "option": "02",
+                                "id": "02"
+                            }
+                        ]
+                    }, {
+                        "id": "02",
+                        "required": true,
+                        "inputType": "checkBoxGroup",
+                        "caption": "Vegetarian (Diet)",
+                        "values": [{
+                                "option": "1A",
+                                "label": "Vegan"
+                            }, {
+                                "option": "1B",
+                                "label": "Ovo-vegetarian"
+                            }, {
+                                "option": "1C",
+                                "label": "Lacto-vegetarian"
+                            }, {
+                                "option": "1D",
+                                "label": "Lacto-ovo-vegetarian"
+                            }, {
+                                "option": "1E",
+                                "label": "Fruits only"
+                            }
+                        ],
+                        "next": [{
+                                "option": "ANY",
+                                "id": "03"
+                            }
+                        ]
+                    }, {
+                        "id": "03",
+                        "required": true,
+                        "inputType": "checkBoxGroup",
+                        "caption": "Therapeutic (Diet)",
+                        "values": [{
+                                "option": "2A",
+                                "label": "Diabetes"
+                            }, {
+                                "option": "2B",
+                                "label": "Hypertension"
+                            }, {
+                                "option": "2C",
+                                "label": "Kidney"
+                            }, {
+                                "option": "2D",
+                                "label": "Gluten free"
+                            }, {
+                                "option": "2E",
+                                "label": "Lactose free"
+                            }, {
+                                "option": "2F",
+                                "label": "Other (specify)"
+                            }
+                        ],
+                        "next": [{
+                                "option": "2A",
+                                "id": "05"
+                            }, {
+                                "option": "2B",
+                                "id": "05"
+                            }, {
+                                "option": "2C",
+                                "id": "05"
+                            }, {
+                                "option": "2D",
+                                "id": "05"
+                            }, {
+                                "option": "2E",
+                                "id": "05"
+                            }, {
+                                "option": "2F",
+                                "id": "04"
+                            }
+                        ]
+                    }, {
+                        "id": "04",
+                        "required": true,
+                        "caption": "Others - Please Provide Therapeutic (Diet) Followed",
+                        "inputType": "editText",
+                        "values": [],
+                        "next": [{
+                                "option": "ANY",
+                                "id": "05"
+                            }
+                        ]
+                    }, {
+                        "id": "05",
+                        "required": true,
+                        "inputType": "checkBoxGroup",
+                        "caption": "Weight management (Diet)",
+                        "values": [{
+                                "option": "3A",
+                                "label": "Low calories"
+                            }, {
+                                "option": "3B",
+                                "label": "Very-low calories"
+                            }, {
+                                "option": "3C",
+                                "label": "Low carbohydrates"
+                            }, {
+                                "option": "3D",
+                                "label": "Low fat"
+                            }, {
+                                "option": "3E",
+                                "label": "High protein"
+                            }, {
+                                "option": "3F",
+                                "label": "Weight gaining"
+                            }
+                        ],
+                        "next": [{
+                                "option": "ANY",
+                                "id": "06"
+                            }
+                        ]
+                    }, {
+                        "id": "06",
+                        "required": true,
+                        "inputType": "checkBoxGroup",
+                        "caption": "Allergy-free (Diet)",
+                        "values": [{
+                                "option": "4A",
+                                "label": "Milk Allergy"
+                            }, {
+                                "option": "4B",
+                                "label": "Egg Allergy"
+                            }, {
+                                "option": "4C",
+                                "label": "Nuts allergy"
+                            }, {
+                                "option": "4D",
+                                "label": "Other (specify)"
+                            }
+                        ],
+                        "next": [{
+                                "option": "4A",
+                                "id": "08"
+                            }, {
+                                "option": "4B",
+                                "id": "08"
+                            }, {
+                                "option": "4C",
+                                "id": "08"
+                            }, {
+                                "option": "4D",
+                                "id": "07"
+                            }
+                        ]
+                    }, {
+                        "id": "07",
+                        "required": true,
+                        "caption": "Others - Please Provide Allergy-free (Diet) Followed",
+                        "inputType": "editText",
+                        "values": [],
+                        "next": [{
+                                "option": "ANY",
+                                "id": "08"
+                            }
+                        ]
+                    }, {
+                        "id": "08",
+                        "required": true,
+                        "inputType": "checkBoxGroup",
+                        "caption": "Sport (Diet)",
+                        "values": [{
+                                "option": "5A",
+                                "label": "High carbohydrates (>6g/kg)"
+                            }, {
+                                "option": "5B",
+                                "label": "High protein (>2g/kg)"
+                            }, {
+                                "option": "5C",
+                                "label": "Other (specify)"
+                            }
+                        ],
+                        "next": [{
+                                "option": "5A",
+                                "id": "10"
+                            }, {
+                                "option": "5B",
+                                "id": "10"
+                            }, {
+                                "option": "5C",
+                                "id": "10"
+                            }, {
+                                "option": "5D",
+                                "id": "09"
+                            }
+                        ]
+                    }, {
+                        "id": "09",
+                        "required": true,
+                        "caption": "Others - Please Provide Sport (Diet) Plan Followed",
+                        "inputType": "editText",
+                        "values": [],
+                        "next": [{
+                                "option": "ANY",
+                                "id": "10"
+                            }
+                        ]
+                    }, {
+                        "id": "10",
+                        "required": true,
+                        "caption": "Others - Please Provide Diet Plan Followed",
+                        "inputType": "editText",
+                        "values": [],
+                        "next": [{
+                                "option": "ANY",
+                                "id": "11"
+                            }
+                        ]
+                    }, {
+                        "id": "11",
+                        "required": true,
+                        "caption": "Do you suffer from any food allergies or intolerances? ",
+                        "inputType": "radiogroup",
+                        "values": [{
+                                "option": "01",
+                                "label": "NO"
+                            }, {
+                                "option": "02",
+                                "label": "YES"
+                            }
+                        ],
+                        "next": [{
+                                "option": "01",
+                                "id": null
+                            }, {
+                                "option": "02",
+                                "id": "12"
+                            },
+                        ]
+                    }, {
+                        "id": "12",
+                        "required": true,
+                        "caption": "Others - Please Provide allergies or intolerances",
+                        "inputType": "editText",
+                        "values": [],
+                        "next": [{
+                                "option": "ANY",
+                                "id": null
+                            }
+                        ]
+                    }
+                ]
+            }, {
+                "id": "03",
+                "title": "Supplements",
+                "conditions": null,
+                "header": true,
+                "questions": [{
+                        "id": "01",
+                        "required": true,
+                        "caption": "Do you regularly take any supplements?",
+                        "inputType": "radiogroup",
+                        "values": [{
+                                "option": "01",
+                                "label": "NO"
+                            }, {
+                                "option": "02",
+                                "label": "YES"
+                            }
+                        ],
+                        "next": [{
+                                "option": "01",
+                                "id": null
+                            }, {
+                                "option": "02",
+                                "id": "02"
+                            }
+                        ]
+                    }, {
+                        "id": "02",
+                        "required": true,
+                        "inputType": "checkBoxGroup",
+                        "caption": "supplements",
+                        "values": [{
+                                "option": "01",
+                                "label": "Iron"
+                            }, {
+                                "option": "02",
+                                "label": "Calcium"
+                            }, {
+                                "option": "03",
+                                "label": "Vitamin B/complex"
+                            }, {
+                                "option": "04",
+                                "label": "Vitamin D"
+                            }, {
+                                "option": "05",
+                                "label": "Multivitamins +/- minerals"
+                            }, {
+                                "option": "06",
+                                "label": "Other vitamins"
+                            }, {
+                                "option": "07",
+                                "label": "Omega 3 /Omega 6"
+                            }, {
+                                "option": "08",
+                                "label": "Zinc"
+                            }, {
+                                "option": "NN",
+                                "label": "None of the above"
+                            }, {
+                                "option": "DA",
+                                "label": "Prefer not to answer"
+                            }
+                        ],
+                        "next": [{
+                                "option": "ANY",
+                                "id": null
+                            }
+                        ]
+                    }
+                ]
+            }, {
+                "id": "04",
+                "title": "Self Perceived Health",
+                "conditions": null,
+                "header": true,
+                "questions": [{
+						"id": "01",
+                        "required": true,
+                        "caption": "How do you rate your own health?",
+                        "inputType": "radiogroup",
+                        "values": [{
+                                "option": "01",
+                                "label": "Poor / Fair"
+                            }, {
+                                "option": "02",
+                                "label": "Good"
+                            }, {
+                                "option": "03",
+                                "label": "Very Good/Excellent"
+                            }
+                        ],
+                        "next": [{
+                                "option": "ANY",
+                                "id": null
+                            }
+                        ]
+                    }
+                ]
+            }, {
+                "id": "05",
+                "title": "Physical Activity - Adult",
+                "conditions": [{
+                        "value": "agegroup:adult",
+                        "title": "Adult (>10 Years) ",
+                        "description": "Applicable for adults above 10 Years"
+                    }
+                ],
+                "header": true,
+                "questions": [{
+                        "id": "01",
+                        "required": true,
+                        "caption": "During the last 7 days, on how many days did you do vigorous physical activities like heavy lifting, digging, aerobics, or fast bicycling?",
+                        "inputType": "editText",
+                        "values": [],
+                        "next": [{
+                                "option": "ANY",
+                                "id": "02"
+                            }
+                        ]
+                    }, {
+                        "id": "02",
+                        "required": true,
+                        "caption": "How much time did you usually spend doing vigorous physical activities on one of those days?",
+                        "inputType": "editText",
+                        "values": [],
+                        "next": [{
+                                "option": "ANY",
+                                "id": "03"
+                            }
+                        ]
+                    }, {
+                        "id": "03",
+                        "required": true,
+                        "caption": "During the last 7 days, on how many days did you do moderate physical activities like carrying light loads, bicycling at a regular pace, or doubles tennis? Do not include walking.",
+                        "inputType": "editText",
+                        "values": [],
+                        "next": [{
+                                "option": "ANY",
+                                "id": "04"
+                            }
+                        ]
+                    }, {
+                        "id": "04",
+                        "required": true,
+                        "caption": "How much time did you usually spend doing moderate physical activities on one of those days?",
+                        "inputType": "editText",
+                        "values": [],
+                        "next": [{
+                                "option": "ANY",
+                                "id": "05"
+                            }
+                        ]
+                    }, {
+                        "id": "05",
+                        "required": true,
+                        "caption": "During the last 7 days, on how many days did you walk for at least 10 minutes at a time?",
+                        "inputType": "editText",
+                        "values": [],
+                        "next": [{
+                                "option": "ANY",
+                                "id": "06"
+                            }
+                        ]
+                    }, {
+                        "id": "06",
+                        "required": true,
+                        "caption": "How much time did you usually spend walking on one of those days?",
+                        "inputType": "editText",
+                        "values": [],
+                        "next": [{
+                                "option": "ANY",
+                                "id": null
+                            }
+                        ]
+                    }
+                ]
+            }, {
+                "id": "06",
+                "title": "Physical Activity - Child",
+                "conditions": [{
+                        "value": "agegroup:child",
+                        "title": "Child  (<=10 Years) ",
+                        "description": "Applicable for Age group below or equal to 10 Years"
+                    }
+                ],
+                "header": true,
+                "questions": [{
+                        "id": "01",
+                        "required": true,
+                        "caption": "During the last 7 days, on how many days did your child do vigorous physical activities like play clubs on the street, rollerblading, or fast bicycling?___days",
+                        "inputType": "editText",
+                        "values": [],
+                        "next": [{
+                                "option": "ANY",
+                                "id": "02"
+                            }
+                        ]
+                    }, {
+                        "id": "02",
+                        "required": true,
+                        "caption": "During the last 7 days, on how many days did he/she do moderate physical activities like rope jumping, ice-skating in the malls or at skating centers, or bicycling at a regular pace? Do notinclude walking.",
+                        "inputType": "editText",
+                        "values": [],
+                        "next": [{
+                                "option": "ANY",
+                                "id": "03"
+                            }
+                        ]
+                    }, {
+                        "id": "03",
+                        "required": true,
+                        "caption": "During the last 7 days, on how many days did he/she walk for at least 10 minutes at a time?___days per week (range 0-7, 8, 9)",
+                        "inputType": "editText",
+                        "values": [],
+                        "next": [{
+                                "option": "ANY",
+                                "id": null
+                            }
+                        ]
+                    }
+                ]
+            }, {
+                "id": "07",
+                "title": "Smoking Status",
+                "conditions": null,
+                "header": true,
+                "questions": [{
+                        "id": "01",
+                        "required": true,
+                        "caption": "Do you smoke?",
+                        "inputType": "radiogroup",
+                        "values": [{
+                                "option": "01",
+                                "label": "NO"
+                            }, {
+                                "option": "02",
+                                "label": "YES, on most or all days"
+                            }, {
+                                "option": "DA",
+                                "label": "Prefer not to answer"
+                            }
+                        ],
+                        "next": [{
+                                "option": "ANY",
+                                "id": null
+                            }
+                        ]
+                    }
+                ]
+            },
+			{
+                "id": "08",
+                "title": "Drinking Water",
+                "conditions": null,
+                "header": true,
+                "questions": [{
+						"id": "01",
+                        "required": true,
+                        "caption": "What type of water did you use for drinking? Check all those apply",
+                        "inputType": "checkBoxGroup",
+                        "values": [{
+                                "option": "01",
+                                "label": "Tap"
+                            }, {
+                                "option": "02",
+                                "label": "Filtered"
+                            }, {
+                                "option": "03",
+                                "label": "Bottled"
+                            }, {
+                                "option": "04",
+                                "label": "Do not know"
+                            }, {
+                                "option": "DA",
+                                "label": "Prefer not to answer"
+                            }
+                        ],
+                        "next": [{
+                                "option": "ANY",
+                                "id": "02"
+                            }
+                        ]						
+                    }, {
+						"id": "02",
+                        "required": true,
+                        "caption": "If you did NOT use tap water, please tell us the reason why? Select one from",
+                        "inputType": "radiogroup",
+                        "values": [{
+                                "option": "01",
+                                "label": "Unhealthy"
+                            }, {
+                                "option": "02",
+                                "label": "Unsafe"
+                            }, {
+                                "option": "03",
+                                "label": "No reason/ Do not know"
+                            }, {
+                                "option": "04",
+                                "label": "Other reasons"
+                            }, {
+                                "option": "DA",
+                                "label": "Prefer not to answer"
+                            }
+                        ],
+                        "next": [{
+                                "option": "ANY",
+                                "id": "03"
+                            }
+                        ]
+                    }, {
+						"id": "03",
+                        "required": true,
+                        "caption": "What type of water did you use for preparation of your tea/coffee? Select one from",
+                        "inputType": "radiogroup",
+                        "values": [{
+                                "option": "01",
+                                "label": "Tap"
+                            }, {
+                                "option": "02",
+                                "label": "Filtered"
+                            }, {
+                                "option": "03",
+                                "label": "Bottled"
+                            }, {
+                                "option": "04",
+                                "label": "Do not know"
+                            }
+                        ],
+                        "next": [{
+                                "option": "ANY",
+                                "id": null
+                            }
+                        ]
+                    }
+                ]
+            }			
+        ]
+    }
+    ]
+}
+}
